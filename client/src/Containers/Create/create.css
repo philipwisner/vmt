@@ -11,13 +11,14 @@
   flex-flow: column;
   align-items: center;
   padding-bottom: 20px;
-  /* border-bottom: 2px solid #ddd; */
+ /* border-bottom: 2px solid #ddd; */
 }
 
 .Title {
   padding-bottom: 12px;
   margin: 0;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid red;
+  /* border-bottom: 1px solid #ddd; */
 }
 
 .Form {
@@ -84,7 +85,8 @@
 }
 
 .Plus {
-  margin-left: 3px;
+  margin-left: 8px;
   margin-right: -5px;
   color: orange;
+  float: right;
 }
