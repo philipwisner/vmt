@@ -3,6 +3,7 @@
   orange: orange;
   darkOrange: darkOrange;
   darkGrey: darkGrey;
+  red: red;
   lightestShadow: lightestShadow;
   lightShadow: lightShadow;
   newBoxShadow: newBoxShadow;
@@ -137,4 +138,19 @@
 .Secondary:hover {
   color: white;
   box-shadow: newBoxShadow;
+}
+
+
+.Delete {
+  background: none;
+  color: red;
+  border: none;
+}
+
+.Delete:hover {
+  color: #c24343;
+}
+
+.Delete:focus {
+  outline: none;
 }
