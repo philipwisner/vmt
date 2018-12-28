@@ -20,16 +20,18 @@ const resources = props => {
         {/* @TODO don't show create optinos for participants */}
         <div className={classes.Controls}>
           <div className={classes.Search}><Search /></div>
-          {props.parentResource !== 'activities' && props.user.accountType === 'facilitator'
-            ? <NewResource
-                resource={props.resource}
-                courseId={props.parentResource === 'courses'
-                  ? props.parentResourceId
-                  : null
-                }
-              />
-            : null
-          }
+          <div className={classes.Tabs}>
+            {props.parentResource !== 'activities' && props.user.accountType === 'facilitator'
+              ? <NewResource
+                  resource={props.resource}
+                  courseId={props.parentResource === 'courses'
+                    ? props.parentResourceId
+                    : null
+                  }
+                />
+              : null
+            }
+          </div>
         </div>
         <h2 className={classes.ResourceHeader}>My {displayResource}</h2>
         <BoxList
