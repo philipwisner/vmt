@@ -21,7 +21,7 @@ class RoomInfo extends Component {
     return (
     <div className={classes.RoomDescription}>
       <div className={classes.TabNameTitle} >
-        <EditableText owner={role === 'facilitator'} inputType={'INPUT'} resource='tab' parentResource={updatedActivity ? 'activity' : 'room'} id={room.tabs[currentTab]._id}  parentId={room._id} field='name'>
+        <EditableText owner={role === 'facilitator'} inputType={'INPUT'} resource='tab' parentResource={updatedActivity ? 'activity' : 'room'} id={room.tabs[currentTab]._id} room={room} parentId={room._id} field='name'>
           {room.tabs[currentTab].name}
         </EditableText>
         <div onClick={this.toggleCollapse.bind(this)} className={classes.ToggleView} style={{transform: this.state.expanded ? `rotate(0)` : `rotate(90deg)`}}><Expand/></div>
