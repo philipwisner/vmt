@@ -11,7 +11,6 @@ class Community extends Component {
       let selectCountClass = (selectCount === 0) ? classes.SelectCountNone : classes.SelectCountPos;
       return (
         <div className={classes.Container}>
-        {selecting ? <div className={classes.Selecting} data-testid='select-tag'>Selecting</div> : null}
         <h3 className={classes.Title}>Search for activities or ask to join rooms and courses</h3>
         <div className={classes.ResourceOpts}>
           <div><CustomLink to="/community/activities">Activities</CustomLink></div>
@@ -20,7 +19,8 @@ class Community extends Component {
         </div>
         <div className={classes.Search}><Search _filter={value => this.filterResults(value)} /></div>
         <div className={classes.List}>
-          {selecting ? <div className={[classes.SelectCount, selectCountClass].join(" ")}>you have selected <span data-testid='select-count'>{selectCount}</span> activities</div> : null}
+          {selecting ? <div className={classes.Selecting} data-testid='select-tag'>Selecting</div> : null}
+          {selecting ? <div className={[classes.SelectCount, selectCountClass].join(" ")}>You have selected <span data-testid='select-count'>{selectCount}</span> {selectCount > 1 || selectCount === 0 ? 'activities' : 'activity' }</div> : null}
           <BoxList
             list={visibleResources}
             resource={resource}

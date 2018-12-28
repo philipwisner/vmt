@@ -1,14 +1,16 @@
 :import('../../../colors.css'){
-  lightBlue: lightBlue;
+  blue: blue;
+  darkGrey: darkGrey;
 }
 
 .Link {
-  color: lightBlue;
-  padding-bottom: 2px;
-  border-bottom: none;
-  transition: .2s;
+  color: darkGrey;
+  padding-bottom: 5px;
+  /* transition: .2s; */
 }
 
 .Link:hover {
-  border-bottom: 1px solid #999;
+  transition: .2s;
+  font-weight: 700;
+  color: black;
 }
