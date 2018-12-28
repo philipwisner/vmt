@@ -47,6 +47,11 @@
   color: black;
   font-weight: 600;
 }
+
+.ActiveTab:focus {
+  outline: none;
+}
+
 /* @TODO might consider extracting out Notification to its own component */
 .Notifications {
   position: absolute;

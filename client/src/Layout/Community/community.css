@@ -2,7 +2,7 @@
   green: green;
   lightShadow: lightShadow;
   darkShadow: darkShadow;
-  backgroundGray: backgroundGray; 
+  backgroundGray: backgroundGray;
   navBarHeight: navBarHeight;
 }
 :root{
@@ -23,16 +23,17 @@
   display: flex;
   width: 300px;
   justify-content: space-between;
-  margin: 25px 0;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .Search {
-  height: 100px;
-  font-size: 70px;
+  /* height: 100px; */
+  font-size: 35px;
 }
 
 .List {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .Selecting {
