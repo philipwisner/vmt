@@ -79,8 +79,6 @@
 
 .Button {
   margin: 0 5px;
-  /* color: white; */
-  /* flex-grow: 1; */
   height: 100%;
   display: inline-flex;
   flex-direction: row;

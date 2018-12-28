@@ -11,6 +11,7 @@
   /* border: 1px solid white; */
   margin: 0 10px;
   font-weight: 300;
+  height: 50px;
 }
 
 .Link {
@@ -35,7 +36,7 @@
   width: 0; height: 2px;
   display: block;
   border-radius: 4px;
-  margin-top: 25px;
+  bottom: 0;
   right: 0;
   background: white;
   transition: width .2s ease-in;
