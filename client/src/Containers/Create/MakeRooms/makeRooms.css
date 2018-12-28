@@ -28,6 +28,10 @@
   width: 100%;
 }
 
+.SubContainer input{
+  width: 100%;
+}
+
 .ParticipantList {
   margin: 10px 0 10px 0;
   display: flex;
