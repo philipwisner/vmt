@@ -218,7 +218,9 @@ class Chat extends Component {
             </svg>
           </div>
         </h3>
-        <div className={(this.state.expanded ? classes.ChatScroll : classes.Collapsed)} ref={this.chatEnd} onScroll={this.updateReferencePositions} id='scrollable'>{displayMessages}</div>
+        <div className={(this.state.expanded ? classes.ChatScroll : classes.Collapsed)} ref={this.chatEnd} onScroll={this.updateReferencePositions} id='scrollable'>
+          {displayMessages}
+        </div>
         {!replayer ?
           <div className={classes.ChatInput}>
             <input ref={this.chatInput} className={classes.Input} type = {"text"} onChange={change} value={value}/>
